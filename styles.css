@@ -1,0 +1,118 @@
+.font {
+    font-family: Arial, Helvetica, sans-serif ;
+}
+
+#header {
+    position: relative ; 
+}
+
+#header h1{
+    font-size: 40px ; 
+    padding: 10px ; 
+    display: inline-block ; 
+    background-color: rgb(192, 133, 78) ;
+    color:rgba(59, 31, 4, 0.897) ; 
+}
+
+#header button{
+    font-size: 20px ; 
+    border:2px white ; 
+    color:rgba(59, 31, 4, 0.897) ; 
+    padding: 5px ; 
+    display: inline-block ;
+    background-color: bisque ;
+    position: absolute;
+    right: 30px ; 
+    margin-top: 40px ;
+}
+
+#header button:hover{
+    filter:brightness(95%) ; 
+    cursor: pointer ; 
+}
+
+
+#popup {
+    position: fixed ; 
+    top: 0 ; 
+    left: 0 ;
+    backdrop-filter: blur(3px) ;
+    display: flex;
+    justify-content: center ;
+    align-items: center ;
+    width: 100% ; 
+    height: 100% ; 
+}
+
+#form-box {
+    background-color: bisque;
+    padding: 40px 40px ; 
+    border-radius: 15px ;
+    box-shadow: 0 8px 20px rgba(59, 31, 4, 0.897) ;
+    text-align: center;
+    width: 400px ; 
+}
+
+#form-box h2 {
+    margin-bottom: 10px ;
+    font-size: 20px ;
+    color: rgba(59, 31, 4, 0.897) ; 
+}
+
+#form-box input {
+    padding: 10px ; 
+    margin: 8px 0 ; 
+    font-size: 16px ; 
+    border: 1px  solid rgba(59, 31, 4, 0.897) ;
+    box-sizing: border-box ;
+}
+
+#form-box button {
+    margin-top: 10px ;
+    padding: 10px 15px ; 
+    font-size: 16px ; 
+    background-color: beige ;
+    border: none ; 
+    border-radius: 6px ; 
+    display: block;
+    margin: 12px auto 0 auto ; 
+
+}
+#form-box button:hover {
+    cursor: pointer ; 
+}
+
+#popup.hidden {
+    display: none ; 
+}
+
+.book-stats {
+    border: 1px  solid black;
+    box-sizing: border-box ;
+    background-color: rgb(192, 118, 15);
+    color:rgba(59, 31, 4, 0.897) ; 
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.897);
+    width: 200px ; 
+    height: 200px ; 
+    text-align: center ;
+}
+
+.book-stats button {
+    cursor: pointer ; 
+    margin-top: 5px ;
+    margin-bottom: 5px ; 
+    background-color: beige;
+}
+
+.book-stats button:hover {
+    background-color: rgba(245,245,220,0.6);
+}
+
+#library-container {
+    display: flex ;
+    flex-wrap: wrap ;
+    gap: 20px ; 
+    justify-content: center;
+    padding: 20px ; 
+}
+

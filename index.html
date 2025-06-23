@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width = device-width, initial_scale = 1.0">
+    <title>Charles's Library</title>
+    <link href = "styles.css" rel = "stylesheet">
+</head>
+<body>
+    <div id = "header">
+        <h1 class = "font">Charles's Library</h1>
+        <button class = "font" onclick = "libraryForm()">Click to add books</button>
+    </div>
+
+    <div id = "popup" class = "hidden">  
+        <form id = "form-box">
+            <h2>Add your book</h2>
+            <input type = "text" id = "title" placeholder = "Title" required>
+            <input type = "text" id = "author" placeholder = "Author" required>
+            <input type = "text" id = "pages" placeholder = "Pages" required>
+            <button type = "submit" onclick="closeForm()">Submit</button>
+        </form>
+        
+    </div>
+    <div id = "library-container"></div>
+
+
+
+
+
+
+    <script src="Book.js"></script>
+</body>
+</html>
